@@ -1,0 +1,83 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0f0f0;
+  margin: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); 
+  grid-template-rows: repeat(8, 100px);
+  gap: 10px;
+  width: 750px;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #333;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.a, .b, .c, .d, .e, .f
+{
+  grid-column: span 2;
+  grid-row: span 1;
+  background-color: red;
+
+}
+
+.g, .h, .i, .j 
+{
+  grid-column: span 3;
+  grid-row: span 2;
+  background-color: orange;
+  
+}
+
+.k, .m, .o
+{
+  grid-column: span 2;
+  grid-row: span 1;
+  background-color: yellow;
+ 
+}
+
+.l, .n
+{
+  grid-column: span 3;
+  grid-row: span auto;
+  background-color: yellow;
+ 
+}
+
+.p, .q, .r 
+{
+  grid-column: span 4;
+  grid-row: span auto;
+  background-color: green;
+}
+
+.s, .t
+
+{
+  grid-column: span 6;
+  grid-row: span auto;
+  background-color: blue;
+  
+}
+
+.u
+
+{
+  grid-column: span 12;
+  grid-row: span auto;
+  background-color: purple;
+
+}
